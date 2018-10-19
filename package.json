@@ -1,7 +1,7 @@
 {
 	"name": "cli_demo",
-	"version": "1.0.0",
-	"description": "测试babel",
+	"version": "0.0.1",
+	"description": "脚手架搭建",
 	"scripts": {
 		"dev": "node ./build/dev-server.js",
 		"build": "node ./build/build.js"
@@ -11,7 +11,9 @@
 		"npm": ">=3.10.10"
 	},
 	"keywords": [
-		"babel"
+		"babel",
+		"cli",
+		"webpack"
 	],
 	"author": "varcyan",
 	"license": "ISC",
@@ -42,7 +44,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": ""
+		"url": "https://github.com/varcyan/cli_demo.git"
 	},
 	"dependencies": {
 		"babel-eslint": "^10.0.1",
