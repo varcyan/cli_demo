@@ -1,9 +1,7 @@
 // 导入check-versions.js文件，并且执行导入的函数，用来确定当前环境node和npm版本是否符合要求
 require('./check-versions')()
-console.log(1)
 // 导入config目录下的index.js配置文件，此配置文件中定义了生产和开发环境中所要用到的一些参数
 var config = require('./config')
-console.log(2)
 
 // 下面表示如果如果没有定义全局变量NODE_ENV，则将NODE_ENV设置为"development"
 if (!process.env.NODE_ENV) {

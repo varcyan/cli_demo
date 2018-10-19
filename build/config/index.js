@@ -1,10 +1,8 @@
-// see http://vuejs-templates.github.io/webpack for documentation.
 // path是node.js的路径模块，用来处理路径统一的问题
 var path = require('path')
 
 let rootDir = __dirname.replace(/(.*)\/build\/config$/, '$1');
 let projectDir = process.cwd().replace(rootDir, '');
-let projectPackage = require(process.cwd() + '/package.json');
 let layerArr = [];
 layerArr.length = projectDir.split('/').length + 1;
 
@@ -20,7 +18,7 @@ module.exports = {
         // 下面定义的是静态资源根目录的子目录static，也就是dist目录下面的static
         assetsSubDirectory: './',
         // 下面定义的是静态资源的公开路径，也就是真正的引用路径
-        assetsPublicPath: '/',
+        assetsPublicPath: '',
         // 下面定义是否生成生产环境的sourcmap，sourcmap是用来debug编译后文件的，通过映射到编译前文件来实现
         productionSourceMap: true,
         // Gzip off by default as many popular static hosts such as
@@ -59,9 +57,5 @@ module.exports = {
         // 是否生成css，map文件，上面这段英文就是说使用这个cssmap可能存在问题，但是按照经验，问题不大，可以使用
         // 给人觉得没必要用这个，css出了问题，直接控制台不就完事了
         cssSourceMap: false
-    },
-    rootDir: rootDir,
-	projectDir: projectDir,
-	projectLayer: layerArr.join('../'),
-	package: projectPackage
+    }
 }

@@ -83,7 +83,7 @@ var webpackConfig = merge(baseWebpackConfig, {
         ? 'index.html'
         : config.build.index,
         // 模板是index.html加不加无所谓
-      template: 'index.html',
+      template: 'src/index.html',
       // 将js文件放到body标签的结尾
       inject: true,
 
