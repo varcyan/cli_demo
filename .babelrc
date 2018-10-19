@@ -1,0 +1,22 @@
+{
+    "presets": [
+        [
+            "env",
+            {
+                "targets": {
+                    "browsers": ["last 5 versions", "ie >= 8"]
+                }
+            }
+        ]
+    ],
+    "plugins": [
+        "transform-runtime"
+    ],
+    "comments": false
+    // "env": {
+    //     "test": {
+    //         "presets": ["env","stage-2"],
+    //         "plugins": ["istanbul","transform-runtime"]
+    //     }
+    // }
+}
